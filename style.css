@@ -1,0 +1,161 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .icons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon {
+        flex-basis: 33%;
+    }
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+} 
+img{
+    display:block;
+    width: 100%;
+}
+a {
+    text-decoration-color: #126CFD;
+    color: #14213D;
+    text-decoration-thickness: 15%;
+}
+h1 {
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 0.5;
+    color: #14213D;
+}
+
+h2 {
+    font-weight: normal;
+    color: #7D8391;
+    /* line-height: 0.5em; */
+
+}
+ul{
+    width: 100%;
+    padding-inline-start: 30px;
+}
+
+li {
+    display: flex;
+    border-left: solid;
+    margin: 30px 10px;
+    border-color: #FCA311;
+    border-left-style: dashed;
+
+}
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.column {
+    flex: 80%;
+}
+
+.icon.column {
+    flex: 15%;
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+    max-width: 60px;
+}
+
+.container.photo{
+    max-width: 900px;
+    padding: 0;
+    margin-bottom: 0;
+    color: #7D8391;
+}
+
+.container.header {
+    max-width: 800px;
+}
+
+.container.sources {
+    max-width: 900px;
+}
+
+.quote {
+    max-width: 700px;
+    margin-left: 50px;
+}
+.photo p {
+    font-size: 0.9rem;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+
+
+#dateline {
+    font-size: .9rem;
+    color: #7D8391;
+}
+
+#author {
+    text-decoration: underline;
+    text-decoration-color: #FCA311;
+    line-height: 1.4rem;
+    text-decoration-thickness: 15%;
+}
+
+#byline {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.byline {
+    padding: 5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #E5E5E5;
+    border-width: 0.2rem;
+    display: inline-block;
+    width: 100%;
+}
+
+#profile {
+    max-width: 50px;
+    float: left;
+    padding: 5px;
+}

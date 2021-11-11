@@ -20,6 +20,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    background-color: #FFFDF0;
 }
 
 img{
@@ -27,7 +28,7 @@ img{
     width: 100%;
 }
 a {
-    text-decoration-color: #126CFD;
+    text-decoration-color: #606c38;
     color: #14213D;
     text-decoration-thickness: 15%;
 }
@@ -36,6 +37,7 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #14213D;
+    align-content: center;
 }
 
 h2 {
@@ -122,7 +124,7 @@ li {
 
 #author {
     text-decoration: underline;
-    text-decoration-color: #FCA311;
+    text-decoration-color: #a86a24;
     line-height: 1.4rem;
     text-decoration-thickness: 15%;
 }

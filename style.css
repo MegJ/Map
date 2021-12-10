@@ -20,7 +20,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    background-color: #FFFDF0;
+    background-color: #1D3557;
+    color: #F1FAEE;
 }
 
 img{
@@ -28,21 +29,21 @@ img{
     width: 100%;
 }
 a {
-    text-decoration-color: #606c38;
-    color: #14213D;
+    text-decoration-color: #D8315B;
     text-decoration-thickness: 15%;
+    color: #F1FAEE;
+
 }
+
 h1 {
     margin-top: 1rem;
     font-size: 3rem;
     font-weight: bold;
-    color: #14213D;
     align-content: center;
 }
 
 h2 {
     font-weight: normal;
-    color: #7D8391;
     /* line-height: 0.5em; */
 
 }
@@ -60,7 +61,7 @@ li {
 }
 
 .container {
-    max-width: 750px;
+    max-width: 900px;
     padding: 5px;
 }
 
@@ -71,10 +72,12 @@ li {
 .details{flex-basis: 66%}
 
 .container {
-    max-width: 750px;
+    /* max-width: 750px; */
     margin: 0 auto;
     padding: 5px;
 }
+
+.containe
 
 .column {
     flex: 80%;
@@ -91,7 +94,6 @@ li {
     max-width: 900px;
     padding: 0;
     margin-bottom: 0;
-    color: #7D8391;
 }
 
 .container.header {
@@ -117,14 +119,31 @@ li {
     height: 90px;
 }
 
+.viz-container {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+iframe {
+    flex: 1;
+    height: 100px;
+  }
+
+.iframe-wrapper {
+    max-width: 800px;
+    padding: 4px;
+}
+
 #dateline {
     font-size: .9rem;
-    color: #7D8391;
 }
 
 #author {
     text-decoration: underline;
-    text-decoration-color: #a86a24;
+    text-decoration-color: #D8315B;
     line-height: 1.4rem;
     text-decoration-thickness: 15%;
 }
